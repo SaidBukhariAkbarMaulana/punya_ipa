@@ -1,0 +1,21 @@
+{
+    "name": "empirex",
+    "version": "1.0.0",
+    "description": "Home of empirex.tech", "main": "script.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/stylepkk.scss css/stylepkk.css"
+    },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walkforr/EmpireX.git"
+    },
+    "author":"",
+    "license": "ISC",
+    "bugs": {
+    "url": "https://github.com/walkforr/EmpireX/issues"
+    },
+    "homepage": "https://github.com/walkforr/EmpireX#readme",
+    "devDependencies": {
+    "node-sass": "^4.11.0"
+}
+}

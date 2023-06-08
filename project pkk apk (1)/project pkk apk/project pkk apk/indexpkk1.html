@@ -1,0 +1,364 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="htm">
+    <link rel="stylesheet" href="stylepkk.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test1.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body style="background-image: url(gambar2.jpeg.jpg);">
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="nav d-flex ai-center jc-spacebetween">
+                <div class="nav-brand">
+                    <h1><a href="">Fashion Store</a></li>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Produk</a></li>
+                        <li><a href="">Contack</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- Hero -->
+    <div class="hero">
+        <div class="container">
+            <div class="home-hero">
+                <div class="hero-desc">
+                    <h2 class="bigtittle">Get Our Food Promo Off Sale Of To 15%</h2>
+                    <h1 class="Left"> Cek produk-produk di kategori new arrival sekarang juga! Ada banyak pilihan baju,  tasbdan lainnya yang sedang trend dan kekinian yang siap kamu bawa pulang</h1>
+                    <a href="" class="bigbtn">Get It Now!</a>
+                </div>
+                <div class="hero-image">
+                    <img src="gambar1.jpg" class="kanan">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero -->
+    <!--- Category -->
+    <div class="category spacersection">
+        <div class="container">
+            <div class="d-flex">
+                <div class="category-item">
+                    <div class="overlay"></div>
+                    <div class="spacercontent"></div>
+                    <table>
+                        <tr>
+                            <td>
+                    <img src="https://images.unsplash.com/photo-1613482184847-44483b792eeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" title="..."></td>
+                <td> <img src="https://images.unsplash.com/photo-1635866110391-bdfeaaea1a81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="" title="Tidak usah khawatir beli sapatu kita, kualitas hebat harga besahabat"></td>
+                <td><img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" title="...">
+                </div></td>
+                </tr>
+                </table>
+                </div>
+                   
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Category -->
+
+    <!-- Swiper -->
+    <div class="swiper">
+        <button onclick="Toggle()" type="button" id="tombol" style="float: right;" class="bg-indigo-600 rounded px-8 py-4 text-white">KERANJANGMU !!</button>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="flex-direction: column;">
+                <img src="" alt="">
+                <p>Baju Sekolah Anak SD</p>
+                <p>2.000.000</p>
+                <button>Buy Now !!</button>
+                <button>Masukan Keranjang</button>
+            </div>
+            <div class="swiper-slide">Resize me!</div>
+            <div class="swiper-slide">Resize me!</div>
+            <div class="swiper-slide">Resize me!</div>
+            <div class="swiper-slide">Resize me!</div>
+            <div class="swiper-slide">Resize me!</div>
+            <div class="swiper-slide">Resize me!</div>
+            <div class="swiper-slide">Resize me!</div>
+            <div class="swiper-slide">Resize me!</div>
+            <div class="swiper-slide">Resize me!</div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+    </div>
+
+        <!-- BATAS TAILWINDDD -->
+
+ 
+        <div id="Keranjang" class="z-10 translate-x-full transform transition ease-in-out duration-500 sm:duration-700 pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+                    <div class="pointer-events-auto w-screen max-w-md">
+                        <div class="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
+                            <div class="flex-1 overflow-y-auto py-6 px-4 sm:px-6">
+                                <div class="flex items-start justify-between">
+                                    <h2 class="text-lg font-medium text-gray-900" id="slide-over-title">Shopping cart
+                                    </h2>
+                                    <div class="ml-3 flex h-7 items-center">
+                                        <button onclick="Toggle()" type="button" class="-m-2 p-2 text-gray-400 hover:text-gray-500">
+                                            <span class="sr-only">Close panel</span>
+                                            <!-- Heroicon name: outline/x-mark -->
+                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mt-8">
+                                    <div class="flow-root">
+                                        <ul role="list" class="-my-6 divide-y divide-gray-200">
+                                            <li class="flex py-6">
+                                                <div
+                                                    class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
+                                                    <img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg"
+                                                        alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt."
+                                                        class="h-full w-full object-cover object-center">
+                                                </div>
+
+                                                <div class="ml-4 flex flex-1 flex-col">
+                                                    <div>
+                                                        <div
+                                                            class="flex justify-between text-base font-medium text-gray-900">
+                                                            <h3>
+                                                                <a href="#">Throwback Hip Bag</a>
+                                                            </h3>
+                                                            <p class="ml-4">$90.00</p>
+                                                        </div>
+                                                        <p class="mt-1 text-sm text-gray-500">Salmon</p>
+                                                    </div>
+                                                    <div class="flex flex-1 items-end justify-between text-sm">
+                                                        <p class="text-gray-500">Qty 1</p>
+
+                                                        <div class="flex">
+                                                            <button type="button"
+                                                                class="font-medium text-indigo-600 hover:text-indigo-500">Remove</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="flex py-6">
+                                                <div
+                                                    class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
+                                                    <img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg"
+                                                        alt="Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch."
+                                                        class="h-full w-full object-cover object-center">
+                                                </div>
+
+                                                <div class="ml-4 flex flex-1 flex-col">
+                                                    <div>
+                                                        <div
+                                                            class="flex justify-between text-base font-medium text-gray-900">
+                                                            <h3>
+                                                                <a href="#">Medium Stuff Satchel</a>
+                                                            </h3>
+                                                            <p class="ml-4">$32.00</p>
+                                                        </div>
+                                                        <p class="mt-1 text-sm text-gray-500">Blue</p>
+                                                    </div>
+                                                    <div class="flex flex-1 items-end justify-between text-sm">
+                                                        <p class="text-gray-500">Qty 1</p>
+
+                                                        <div class="flex">
+                                                            <button type="button"
+                                                                class="font-medium text-indigo-600 hover:text-indigo-500">Remove</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <!-- More products... -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-gray-200 py-6 px-4 sm:px-6">
+                                <div class="flex justify-between text-base font-medium text-gray-900">
+                                    <p>Subtotal</p>
+                                    <p>$262.00</p>
+                                </div>
+                                <p class="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
+                                <div class="mt-6">
+                                    <a href="#"
+                                        class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Checkout</a>
+                                </div>
+                                <div class="mt-6 flex justify-center text-center text-sm text-gray-500">
+                                    <p>
+                                        or
+                                        <button type="button" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                            Continue Shopping
+                                            <span aria-hidden="true"> &rarr;</span>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+    <!-- Shooping -->
+    <div class="shopping spacesection">
+        <div class="container">
+            <div class="d-flex spacersection">
+                <h2>Our Produk </h2>&ensp;
+                <h3>&ensp;sling bag</h3>
+            </div>
+            <div class="d-flex jc-spacebetween">
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1612902456551-333ac5afa26e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 470.000</h4>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1585488763177-bde7d15fd3cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 840.000</h4>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1585488433862-b692398b2bfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 680.000</h4>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1598099947145-e85739e7ca28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 750.000</h4>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1585488574745-5186ef0f1ddf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 520.000</h4>
+                    <a href="">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shopping spacesection">
+        <div class="container">
+            <div class="d-flex spacersection">
+                <h2>Our Produk </h2>&ensp;
+                <h3>&ensp;dress</h3>
+            </div>
+            <div class="d-flex jc-spacebetween">
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1580986475035-f0778c60f5ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 860.000,00</h4>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1592805537976-0a6f6a53e910?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 780.000,00</h4>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1530749238505-9964a974ee14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 920.000,00</h4>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1627660603298-263151da4d38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=445&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 830.000,00</h4>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1531604269568-ad1b8de0a633?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 790.000,00</h4>
+                    <a href="">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shopping spacesection">
+        <div class="container">
+            <div class="d-flex spacersection">
+                <h2>Our Produk </h2>&ensp;
+                <h3>&ensp;shoes</h3>
+            </div>
+            <div class="d-flex jc-spacebetween">
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 780.000,00</h4>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1610398752800-146f269dfcc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 860.000,00</h4>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1604001307862-2d953b875079?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=379&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 810.000,00</h4>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 770.000,00</h4>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="shopping-item">
+                    <img src="https://images.unsplash.com/photo-1590099033615-be195f8d575c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80" alt="" class="img-respon">
+                    <h3>....</h3>
+                    <h4>Rp 730.000,00</h4>
+                    <a href="">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- End Shopping -->
+
+    <!-- Footer -->
+    <div class="footer spacersection">
+        <div class="counter">
+            <p> syarifa &copy; All Right All</p>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script src="app.js"></script>
+
+</body>
+</html>
